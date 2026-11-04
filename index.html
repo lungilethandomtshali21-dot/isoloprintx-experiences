@@ -3,139 +3,121 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#17152f">
 <meta name="description" content="Isolo Printx creates handcrafted NFC products, augmented reality experiences and connected corporate gifting in South Africa.">
 <title>Isolo Printx | Experiences You Can Hold</title>
-
 <style>
-:root {
-  --navy:#17152f;
-  --purple:#7155ed;
-  --pink:#ff70b0;
-  --cyan:#78e5f1;
-  --cream:#fffaf7;
-  --text:#24213c;
-  --muted:#68647a;
-}
+:root{--navy:#17152f;--violet:#7057ed;--pink:#ff70b0;--cyan:#79e5f1;--cream:#fffaf7;--ink:#24213c;--muted:#69657a}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--text)}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink)}
 a{text-decoration:none;color:inherit}
 button,input,textarea,select{font:inherit}
 button{cursor:pointer}
-img,video{max-width:100%;display:block}
-.container{width:min(1150px,90%);margin:auto}
-section{padding:90px 0}
+img,video{display:block;max-width:100%}
+.container{width:min(1140px,90%);margin:auto}
+section{padding:85px 0}
 h1,h2,h3,p{margin-top:0}
-h1{font-size:clamp(3.1rem,7vw,6.7rem);line-height:1.02;letter-spacing:-.055em}
+h1{font-size:clamp(3.2rem,7vw,6.5rem);line-height:1.03;letter-spacing:-.055em}
 h2{font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.1;letter-spacing:-.04em}
-p{line-height:1.75}
-.eyebrow{font-size:.75rem;letter-spacing:3px;font-weight:800;text-transform:uppercase;color:var(--purple)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 24px;border-radius:50px;background:var(--pink);color:var(--navy);font-weight:800;border:0;transition:.25s}
-.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px #ff70b055}
-.btn.secondary{background:transparent;border:1px solid currentColor;color:inherit}
-.btn.purple{background:var(--purple);color:white}
-.actions{display:flex;gap:12px;flex-wrap:wrap}
-.center{text-align:center}
+p{line-height:1.7}
+.eyebrow{font-size:.78rem;letter-spacing:2.5px;text-transform:uppercase;font-weight:800;color:var(--violet);margin-bottom:18px}
+.btn{display:inline-block;padding:15px 24px;border:0;border-radius:40px;background:var(--pink);color:var(--navy);font-weight:800;transition:.25s}
+.btn:hover{transform:translateY(-3px)}
+.btn.outline{background:transparent;border:1px solid currentColor;color:inherit}
+.btn.violet{background:var(--violet);color:white}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
 .muted{color:var(--muted)}
-header{position:sticky;top:0;z-index:50;background:#17152ff2;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff20}
+.center{text-align:center}
+header{position:sticky;top:0;z-index:20;background:#17152ff0;backdrop-filter:blur(15px);border-bottom:1px solid #ffffff20}
 nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .logo{font-size:1.65rem;font-weight:900;letter-spacing:-1.5px;color:white}
 .logo span{color:var(--pink)}
-.navlinks{display:flex;align-items:center;gap:24px;color:#e7e3ff;font-size:.88rem}
+.navlinks{display:flex;gap:23px;align-items:center;color:#e7e3ff;font-size:.88rem}
 .navlinks a:hover{color:var(--pink)}
-.hero{background:radial-gradient(ellipse at 85% 30%,#7155ed80,transparent 45%),linear-gradient(130deg,#17152f,#28204e);color:white;overflow:hidden;padding:115px 0}
-.hero-grid{display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:55px}
+.hero{background:radial-gradient(ellipse at 85% 25%,#7057ed80,transparent 48%),linear-gradient(125deg,#17152f,#29214f);color:white;overflow:hidden}
+.hero-grid,.split{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.hero-grid{grid-template-columns:1.15fr 1fr}
 .hero .eyebrow{color:var(--cyan)}
-.hero p{color:#dedbf3;max-width:540px}
-.hero h1 span{background:linear-gradient(90deg,var(--pink),var(--cyan));color:transparent;background-clip:text}
-.hero-visual{position:relative}
-.hero-visual img{width:100%;border-radius:28px;box-shadow:0 30px 90px #0007;transform:rotate(3deg)}
-.floating{position:absolute;bottom:-20px;left:-20px;padding:18px 23px;background:white;color:var(--navy);border-radius:18px;box-shadow:0 15px 35px #0004;font-weight:800}
-.ticker{background:var(--pink);padding:17px 0;font-weight:900;overflow:hidden;text-align:center;letter-spacing:2px;color:var(--navy)}
+.hero p{color:#e0dcf1;max-width:530px}
+.hero h1 span{background:linear-gradient(90deg,var(--pink),var(--cyan));background-clip:text;color:transparent}
+.hero-image{position:relative}
+.hero-image img{width:100%;height:540px;object-fit:cover;border-radius:28px;box-shadow:0 30px 80px #0006}
+.floating{position:absolute;bottom:-16px;left:-15px;padding:18px 23px;background:white;color:var(--navy);border-radius:16px;font-weight:800;box-shadow:0 10px 35px #0003}
+.ticker{padding:17px;text-align:center;background:var(--pink);font-weight:900;letter-spacing:2px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:white;border:1px solid #ece7f3;border-radius:25px;padding:32px;transition:.25s}
-.card:hover{transform:translateY(-6px);box-shadow:0 20px 45px #17152f12}
-.card .symbol{font-size:2rem;margin-bottom:22px}
-.card h3{font-size:1.35rem}
-.card p{color:var(--muted);font-size:.94rem}
-.card a{color:var(--purple);font-weight:800}
+.card{background:white;border:1px solid #ece7f3;border-radius:24px;padding:30px;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 20px 40px #17152f12}
+.card h3{font-size:1.3rem}
+.card p{color:var(--muted)}
+.card a{color:var(--violet);font-weight:800}
+.symbol{font-size:2.2rem;margin-bottom:20px}
 .dark{background:var(--navy);color:white}
 .dark .eyebrow{color:var(--cyan)}
-.dark p{color:#d4d0e5}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
-.rounded{border-radius:25px;overflow:hidden}
-.feature-img{width:100%;border-radius:25px;box-shadow:0 25px 60px #0002}
-.video-wrap{position:relative;border-radius:25px;overflow:hidden;background:#000}
-.video-wrap video{width:100%;max-height:620px;object-fit:contain;background:#111}
-.media-caption{font-size:.8rem;color:var(--muted);margin-top:12px}
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.gallery img{width:100%;height:270px;object-fit:cover;border-radius:20px}
-.tag{display:inline-block;padding:9px 15px;border-radius:30px;background:#7155ed18;color:var(--purple);font-size:.8rem;font-weight:800;margin:5px 5px 5px 0}
+.dark p{color:#d9d5eb}
+.feature-img{width:100%;max-height:620px;object-fit:cover;border-radius:25px}
+.video-wrap{background:#090910;border-radius:25px;overflow:hidden}
+.video-wrap video{width:100%;max-height:600px;object-fit:contain}
+.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.caption{font-size:.82rem;color:var(--muted);margin-top:12px}
+.dark .caption{color:#c6c1db}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:35px}
 .step{border-top:2px solid var(--pink);padding-top:20px}
-.step strong{display:block;font-size:2rem;color:var(--pink);margin-bottom:10px}
-.demo-box{max-width:800px;margin:40px auto 0;padding:35px;border-radius:28px;background:#ffffff12;border:1px solid #ffffff30}
-.phone{max-width:340px;margin:25px auto;border:8px solid #0b0b16;border-radius:32px;background:white;color:var(--navy);overflow:hidden;min-height:300px}
-.phone-top{background:linear-gradient(130deg,#7155ed,#ff70b0);padding:35px 15px;text-align:center;color:white}
-.avatar{width:70px;height:70px;border-radius:50%;background:white;color:var(--purple);display:grid;place-items:center;font-size:2rem;font-weight:900;margin:auto auto 15px}
-.phone-body{padding:22px;text-align:center}
+.step strong{font-size:2rem;color:var(--pink)}
+.step h3{margin-top:12px}
+.demo-box{max-width:760px;margin:35px auto 0;padding:30px;border:1px solid #ffffff30;background:#ffffff10;border-radius:25px}
+.phone{max-width:340px;margin:25px auto;background:white;color:var(--navy);border:8px solid #0a0a16;border-radius:30px;overflow:hidden}
+.phone-top{padding:32px 15px;background:linear-gradient(130deg,var(--violet),var(--pink));color:white}
+.avatar{width:65px;height:65px;display:grid;place-items:center;background:white;color:var(--violet);font-size:1.7rem;font-weight:900;border-radius:50%;margin:0 auto 15px}
+.phone-body{padding:20px}
 .phone-body p{color:var(--muted);font-size:.85rem}
-.phone-link{display:block;background:#f1edff;padding:13px;margin:10px 0;border-radius:12px;font-weight:700}
-.pill-row{display:flex;flex-wrap:wrap;gap:10px;margin:25px 0}
-.pill{border:1px solid #ded8ed;border-radius:30px;padding:10px 16px;font-size:.86rem}
+.phone-link{display:block;background:#f0ebff;padding:13px;margin:10px 0;border-radius:12px;font-weight:700}
 .quote{background:linear-gradient(130deg,#f1eaff,#fff4f7)}
-form{display:grid;gap:14px}
-input,textarea,select{width:100%;border:1px solid #ded8e7;border-radius:13px;padding:15px;background:white;color:var(--navy)}
+form{display:grid;gap:13px}
+input,select,textarea{width:100%;padding:15px;border:1px solid #ded8e7;border-radius:12px;background:white;color:var(--navy)}
 textarea{min-height:120px;resize:vertical}
 footer{background:#111025;color:#d5d1e8;padding:50px 0 25px}
 .footer-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
 footer a{color:var(--cyan)}
-footer .logo{margin-bottom:15px}
-.chat-launch{position:fixed;bottom:24px;right:24px;z-index:90;border:0;background:var(--purple);color:white;border-radius:50px;padding:17px 24px;font-weight:800;box-shadow:0 12px 35px #17152f60}
-.chat-panel{display:none;position:fixed;bottom:90px;right:24px;width:min(370px,calc(100vw - 30px));background:white;border-radius:23px;box-shadow:0 20px 80px #0004;z-index:100;overflow:hidden}
+.chat-launch{position:fixed;bottom:23px;right:23px;z-index:50;background:var(--violet);color:white;border:0;border-radius:40px;padding:17px 23px;font-weight:800;box-shadow:0 10px 35px #0004}
+.chat-panel{display:none;position:fixed;bottom:90px;right:23px;width:min(370px,calc(100vw - 30px));z-index:60;background:white;border-radius:22px;overflow:hidden;box-shadow:0 20px 70px #0004}
 .chat-panel.open{display:block}
-.chat-head{background:var(--navy);color:white;padding:20px;display:flex;justify-content:space-between;align-items:center}
+.chat-head{display:flex;justify-content:space-between;align-items:center;background:var(--navy);color:white;padding:19px}
 .chat-head button{background:none;border:0;color:white;font-size:1.5rem}
-.chat-messages{height:270px;overflow:auto;padding:20px;background:#faf8ff}
-.bubble{padding:12px 15px;border-radius:15px;background:#ece7ff;margin-bottom:12px;font-size:.9rem;line-height:1.5}
-.bubble.user{background:#dcf8fa;margin-left:35px}
-.chat-controls{padding:15px;display:flex;gap:8px}
+.chat-messages{height:260px;overflow:auto;padding:18px;background:#faf8ff}
+.bubble{background:#eae5ff;padding:12px 14px;border-radius:15px;margin-bottom:12px;font-size:.9rem;line-height:1.5}
+.bubble.user{background:#daf6fa;margin-left:35px}
+.chat-controls{padding:13px;display:flex;gap:8px}
 .chat-controls input{min-width:0}
-.chat-controls button{border:0;background:var(--purple);color:white;border-radius:12px;padding:12px}
+.chat-controls button{border:0;background:var(--violet);color:white;border-radius:12px;padding:12px}
 @media(max-width:800px){
  .navlinks{display:none}
- .hero-grid,.split{grid-template-columns:1fr}
- .hero{padding:70px 0}
- .hero-visual{margin-top:20px}
- .grid3,.steps{grid-template-columns:1fr}
- .gallery{grid-template-columns:1fr}
+ .hero-grid,.split,.grid3,.steps,.video-grid{grid-template-columns:1fr}
+ .hero-image img{height:auto;max-height:550px}
  section{padding:65px 0}
  .floating{left:10px}
- .chat-launch{bottom:15px;right:15px}
- .chat-panel{right:15px;bottom:80px}
+ .chat-panel{right:15px}
 }
 @media(prefers-reduced-motion:reduce){
- *,*:before,*:after{scroll-behavior:auto!important;transition:none!important}
+ html{scroll-behavior:auto}
+ *{transition:none!important}
 }
 </style>
 </head>
-
 <body>
 
 <header>
- <nav class="container">
-  <a class="logo" href="#">isolo<span>printx.</span></a>
-  <div class="navlinks">
-   <a href="#services">Experiences</a>
-   <a href="#collection">NFC Collection</a>
-   <a href="#real-demo">Watch Demo</a>
-   <a href="#work">Our Work</a>
-   <a href="#contact">Contact</a>
-  </div>
-  <a class="btn" href="#contact">Let's Create</a>
- </nav>
+<nav class="container">
+ <a class="logo" href="#">isolo<span>printx.</span></a>
+ <div class="navlinks">
+  <a href="#services">Experiences</a>
+  <a href="#collection">NFC Collection</a>
+  <a href="#videos">Videos</a>
+  <a href="#contact">Contact</a>
+ </div>
+ <a class="btn" href="#contact">Let's Create</a>
+</nav>
 </header>
 
 <main>
@@ -143,16 +125,16 @@ footer .logo{margin-bottom:15px}
 <section class="hero">
  <div class="container hero-grid">
   <div>
-   <div class="eyebrow">Creative Technology • Johannesburg</div>
+   <div class="eyebrow">Creative Technology · Johannesburg</div>
    <h1>Experiences<br>you can <span>hold.</span></h1>
    <p>We transform everyday objects into meaningful digital connections through handcrafted NFC creations, augmented reality and personalised corporate experiences.</p>
    <div class="actions">
-    <a class="btn" href="#collection">Explore the Collection</a>
-    <a class="btn secondary" href="#real-demo">See It in Action</a>
+    <a class="btn" href="#collection">Explore NFC</a>
+    <a class="btn outline" href="#videos">Watch Our Work</a>
    </div>
   </div>
-  <div class="hero-visual">
-   <img src="media/nfc-collection.png" alt="Artistic collection of resin NFC tags by Isolo Printx" loading="eager">
+  <div class="hero-image">
+   <img src="WhatsApp%20Image%202026-11-04%20at%2001.28.07.jpeg" alt="Handcrafted green resin NFC tag alongside a smartphone displaying the Rabb Africa website">
    <div class="floating">✦ Handmade meets digital</div>
   </div>
  </div>
@@ -164,25 +146,24 @@ footer .logo{margin-bottom:15px}
  <div class="container">
   <div class="eyebrow">What we create</div>
   <h2>Beyond ordinary<br>branded products.</h2>
-  <p class="muted">Designed for organisations, events and people who want to make a lasting impression.</p>
-
+  <p class="muted">Connected experiences for organisations, events and people who want to make an impression.</p>
   <div class="grid3">
    <article class="card">
     <div class="symbol">✦</div>
     <h3>NFC Digital Experiences</h3>
-    <p>Handcrafted resin tags that connect to digital profiles, contact details, portfolios, websites and branded experiences.</p>
+    <p>Handcrafted resin tags connecting people to digital profiles, contact information, websites and interactive content.</p>
     <a href="#collection">Explore NFC →</a>
    </article>
    <article class="card">
     <div class="symbol">◈</div>
     <h3>Augmented Reality</h3>
-    <p>Bring print, stories and physical spaces to life through immersive digital content and interactive AR experiences.</p>
-    <a href="#work">Explore AR →</a>
+    <p>Transform print, products and visual storytelling into interactive digital experiences.</p>
+    <a href="#contact">Discuss AR →</a>
    </article>
    <article class="card">
     <div class="symbol">♡</div>
-    <h3>Connected Corporate Gifting</h3>
-    <p>Personalised gifts, employee onboarding pieces and event merchandise with thoughtful digital connections.</p>
+    <h3>Corporate Gifting</h3>
+    <p>Thoughtful, personalised products for employee onboarding, exhibitions and executive gifting.</p>
     <a href="#contact">Request a Quote →</a>
    </article>
   </div>
@@ -194,86 +175,75 @@ footer .logo{margin-bottom:15px}
   <div>
    <div class="eyebrow">The NFC Collection</div>
    <h2>Small objects.<br>Extraordinary connections.</h2>
-   <p>Each resin NFC creation brings together colour, artistic detail and practical technology.</p>
-   <p>Tap a compatible smartphone to access a programmed digital destination — from a business profile to a personalised message.</p>
-   <div class="pill-row">
-    <span class="pill">Handcrafted resin</span>
-    <span class="pill">Custom designs</span>
-    <span class="pill">Digital profiles</span>
-    <span class="pill">Corporate gifting</span>
+   <p>Our handcrafted resin tags combine artistic expression with everyday digital functionality.</p>
+   <p>Each tag can be programmed to open a chosen digital destination when tapped with a compatible NFC-enabled smartphone.</p>
+   <div class="actions">
+    <a class="btn" href="#contact">Customise Your Tag</a>
+    <a class="btn outline" href="#demo">Try a Demo</a>
    </div>
-   <a class="btn" href="#contact">Customise Your NFC Tag</a>
   </div>
-  <img class="feature-img" src="media/nfc-collection.png" alt="Featured collection of colourful handcrafted NFC resin tags" loading="lazy">
+  <img class="feature-img" src="WhatsApp%20Image%202026-11-04%20at%2001.28.07.jpeg" alt="Real Isolo Printx NFC resin product and smartphone" loading="lazy">
  </div>
 </section>
 
-<section>
+<section id="videos">
  <div class="container">
-  <div class="eyebrow center">Made by hand</div>
-  <h2 class="center">Every piece has character.</h2>
-  <p class="center muted">A closer look at the original handmade NFC products.</p>
-  <div class="gallery">
-   <img src="media/real-resin-tags.jpg" alt="Original handmade resin NFC tag designs" loading="lazy">
-   <img src="media/nfc-phone-photo.jpg" alt="Handmade NFC resin tag displayed alongside a smartphone" loading="lazy">
-  </div>
-  <p class="media-caption">Actual product photographs. Resin colours and finishes vary because each piece is handcrafted.</p>
- </div>
-</section>
+  <div class="eyebrow">See the magic in action</div>
+  <h2>Real products.<br>Real experiences.</h2>
+  <p class="muted">Explore our original footage of handcrafted NFC products and digital connections.</p>
 
-<section id="real-demo" class="dark">
- <div class="container split">
-  <div>
-   <div class="eyebrow">See the magic in action</div>
-   <h2>One tap.<br>A whole new experience.</h2>
-   <p>See how a physical NFC creation can connect someone to digital content on their smartphone.</p>
-   <p>It's a simple interaction that can turn an event gift, business accessory or branded keepsake into a memorable experience.</p>
-   <a class="btn" href="#experience">Try the Interactive Demo</a>
-  </div>
-  <div>
-   <div class="video-wrap">
-    <video controls playsinline preload="metadata" poster="media/nfc-phone-photo.jpg">
-     <source src="media/nfc-demo.mp4" type="video/mp4">
-     Your browser does not support video playback.
-    </video>
-   </div>
-   <p class="media-caption" style="color:#d4d0e5">Real NFC product demonstration.</p>
-  </div>
- </div>
-</section>
-
-<section id="craft">
- <div class="container split">
-  <div>
+  <div class="split" style="margin-top:35px">
    <div class="video-wrap">
     <video controls playsinline preload="metadata">
-     <source src="media/making-resin.mp4" type="video/mp4">
-     Your browser does not support video playback.
+     <source src="WhatsApp%20Video%202026-11-04%20at%2001.28.02.mp4" type="video/mp4">
+     Your browser does not support this video.
     </video>
    </div>
+   <div>
+    <div class="eyebrow">NFC Experience</div>
+    <h2>One tap.<br>New possibilities.</h2>
+    <p>See how a physical product can become a gateway to digital information and interactive content.</p>
+    <a class="btn violet" href="#contact">Create Your Experience</a>
+   </div>
   </div>
-  <div>
-   <div class="eyebrow">Handcrafted with purpose</div>
-   <h2>Technology with an artistic soul.</h2>
-   <p>Behind every piece is a creative process of experimenting with resin, colour, texture and form.</p>
-   <p>Our approach celebrates the individuality of handmade objects while giving them a practical digital purpose.</p>
-   <a class="btn purple" href="#contact">Let's Create Something Unique</a>
+
+  <div class="video-grid" style="margin-top:50px">
+   <div>
+    <div class="video-wrap">
+     <video controls playsinline preload="metadata">
+      <source src="WhatsApp%20Video%202026-11-04%20at%2001.28.00.mp4" type="video/mp4">
+      Your browser does not support this video.
+     </video>
+    </div>
+    <h3 style="margin-top:18px">Discover the Details</h3>
+    <p class="muted">A closer look at our original NFC product footage.</p>
+   </div>
+   <div>
+    <div class="video-wrap">
+     <video controls playsinline preload="metadata">
+      <source src="WhatsApp%20Video%202026-11-04%20at%2001.28.05.mp4" type="video/mp4">
+      Your browser does not support this video.
+     </video>
+    </div>
+    <h3 style="margin-top:18px">Behind the Experience</h3>
+    <p class="muted">Explore another view of the creative process and connected products.</p>
+   </div>
   </div>
  </div>
 </section>
 
-<section class="dark" id="experience">
+<section id="demo" class="dark">
  <div class="container center">
   <div class="eyebrow">Interactive preview</div>
   <h2>Imagine what your tag could open.</h2>
-  <p>Try a simulated NFC experience below. This is an interactive website preview, not a physical NFC scan.</p>
+  <p>Experience a simulated NFC interaction. This is a website preview, not a physical NFC scan.</p>
   <div class="demo-box">
    <button class="btn" id="tapButton" type="button">✦ Simulate NFC Tap</button>
    <div class="phone" id="demoPhone" hidden>
     <div class="phone-top">
      <div class="avatar">IP</div>
      <h3>Isolo Printx</h3>
-     <div>Creative Technology & Connected Experiences</div>
+     <p style="color:white">Creative Technology & Connected Experiences</p>
     </div>
     <div class="phone-body">
      <p>Welcome to your digital experience.</p>
@@ -288,51 +258,48 @@ footer .logo{margin-bottom:15px}
 
 <section>
  <div class="container">
-  <div class="eyebrow">How it works</div>
-  <h2>From your idea to an experience.</h2>
-  <div class="steps">
-   <div class="step">
-    <strong>01</strong>
-    <h3>Tell us your vision</h3>
-    <p>Share the occasion, audience, quantity and the experience you want to create.</p>
-   </div>
-   <div class="step">
-    <strong>02</strong>
-    <h3>We design your concept</h3>
-    <p>We develop the product direction and discuss the digital experience and quotation.</p>
-   </div>
-   <div class="step">
-    <strong>03</strong>
-    <h3>Bring it to life</h3>
-    <p>Following approval, we produce the agreed physical and digital components.</p>
-   </div>
+  <div class="eyebrow">Designed for business</div>
+  <h2>Three ways to make<br>an impression.</h2>
+  <div class="grid3">
+   <article class="card">
+    <div class="symbol">01</div>
+    <h3>Employee Onboarding</h3>
+    <p>Welcome new team members with personalised NFC products linking to digital resources and company information.</p>
+   </article>
+   <article class="card">
+    <div class="symbol">02</div>
+    <h3>Events & Exhibitions</h3>
+    <p>Make brand interactions more memorable through NFC-enabled giveaways and connected event merchandise.</p>
+   </article>
+   <article class="card">
+    <div class="symbol">03</div>
+    <h3>Executives & Partners</h3>
+    <p>Create distinctive branded keepsakes that combine handcrafted design with professional digital connections.</p>
+   </article>
   </div>
  </div>
 </section>
 
-<section id="work" class="dark">
+<section class="dark">
  <div class="container">
-  <div class="eyebrow">Creative technology in practice</div>
-  <h2>Explore our digital work.</h2>
-  <div class="grid3">
-   <article class="card" style="color:var(--text)">
-    <div class="symbol">◉</div>
-    <h3>Creative Portfolio</h3>
-    <p>Explore our creative development work, visual storytelling and digital experiments.</p>
-    <a href="https://lungilethandomtshali21-dot.github.io/Creative-portfolio/" target="_blank" rel="noopener">View Portfolio →</a>
-   </article>
-   <article class="card" style="color:var(--text)">
-    <div class="symbol">✧</div>
-    <h3>LearnLab AR</h3>
-    <p>Explore educational augmented reality concepts and interactive prototypes.</p>
-    <a href="https://lungilethandomtshali21-dot.github.io/LearnLab-AR/" target="_blank" rel="noopener">Explore LearnLab →</a>
-   </article>
-   <article class="card" style="color:var(--text)">
-    <div class="symbol">✦</div>
-    <h3>Handcrafted NFC</h3>
-    <p>Discover the collection of resin creations that connect the physical and digital worlds.</p>
-    <a href="#collection">View Collection →</a>
-   </article>
+  <div class="eyebrow">How it works</div>
+  <h2>From idea to experience.</h2>
+  <div class="steps">
+   <div class="step">
+    <strong>01</strong>
+    <h3>Share your vision</h3>
+    <p>Tell us about your event, audience, quantity and creative goals.</p>
+   </div>
+   <div class="step">
+    <strong>02</strong>
+    <h3>Approve your concept</h3>
+    <p>We discuss the proposed product, digital destination, design and quotation.</p>
+   </div>
+   <div class="step">
+    <strong>03</strong>
+    <h3>Bring it to life</h3>
+    <p>Once approved, we produce the agreed physical and digital experience.</p>
+   </div>
   </div>
  </div>
 </section>
@@ -342,18 +309,17 @@ footer .logo{margin-bottom:15px}
   <div>
    <div class="eyebrow">Start a project</div>
    <h2>Let's make something unforgettable.</h2>
-   <p>Planning an event, onboarding experience, corporate gift or AR activation?</p>
-   <p>Tell us what you have in mind and we'll help you explore the possibilities.</p>
+   <p>Planning corporate gifts, an event activation, employee onboarding or an augmented reality project?</p>
+   <p>Tell us what you have in mind.</p>
    <p><strong>WhatsApp:</strong> 073 475 0510</p>
    <p><strong>Email:</strong> isoloprintx@gmail.com</p>
-   <a class="btn purple" href="https://wa.me/27734750510" target="_blank" rel="noopener">Chat on WhatsApp</a>
+   <a class="btn violet" href="https://wa.me/27734750510" target="_blank" rel="noopener">Chat on WhatsApp</a>
   </div>
-
   <div class="card">
    <h3>Request a Quotation</h3>
    <form id="quoteForm">
     <input id="clientName" placeholder="Your name" required>
-    <input id="company" placeholder="Company / Organisation">
+    <input id="company" placeholder="Company or organisation">
     <input id="email" type="email" placeholder="Email address" required>
     <select id="service" required>
      <option value="">Select a service</option>
@@ -363,12 +329,12 @@ footer .logo{margin-bottom:15px}
      <option>Connected Corporate Gifting</option>
      <option>Other Creative Project</option>
     </select>
-    <input id="quantity" placeholder="Estimated quantity or project scope">
-    <input id="deadline" type="date" aria-label="Preferred project deadline">
+    <input id="quantity" placeholder="Estimated quantity or scope">
+    <input id="deadline" type="date" aria-label="Preferred deadline">
     <textarea id="details" placeholder="Tell us about your project" required></textarea>
-    <button class="btn purple" type="submit">Prepare My Enquiry</button>
+    <button class="btn violet" type="submit">Send Enquiry via WhatsApp</button>
    </form>
-   <p class="media-caption">Your enquiry will open in WhatsApp or your email app for you to send. This website does not store your form information.</p>
+   <p class="caption">WhatsApp will open with your enquiry ready to send. The form does not submit automatically.</p>
   </div>
  </div>
 </section>
@@ -376,27 +342,26 @@ footer .logo{margin-bottom:15px}
 </main>
 
 <footer>
- <div class="container">
-  <div class="footer-grid">
-   <div>
-    <div class="logo">isolo<span>printx.</span></div>
-    <p>Art. Technology. Connection.</p>
-    <p>Johannesburg, South Africa</p>
-   </div>
-   <div>
-    <strong>Explore</strong>
-    <p><a href="#collection">NFC Collection</a></p>
-    <p><a href="#real-demo">NFC Demonstration</a></p>
-    <p><a href="#services">Our Services</a></p>
-   </div>
-   <div>
-    <strong>Connect</strong>
-    <p><a href="https://wa.me/27734750510">WhatsApp</a></p>
-    <p><a href="mailto:isoloprintx@gmail.com">Email</a></p>
-    <p><a href="https://isoloprintx.com">Main Store</a></p>
-   </div>
+ <div class="container footer-grid">
+  <div>
+   <div class="logo">isolo<span>printx.</span></div>
+   <p>Art. Technology. Connection.</p>
+   <p>Johannesburg, South Africa</p>
   </div>
-  <hr style="border:0;border-top:1px solid #ffffff20;margin:35px 0">
+  <div>
+   <h3>Explore</h3>
+   <p><a href="#collection">NFC Collection</a></p>
+   <p><a href="#videos">Our Videos</a></p>
+   <p><a href="#services">Our Services</a></p>
+  </div>
+  <div>
+   <h3>Connect</h3>
+   <p><a href="https://wa.me/27734750510">WhatsApp</a></p>
+   <p><a href="mailto:isoloprintx@gmail.com">Email</a></p>
+   <p><a href="https://isoloprintx.com">Main Store</a></p>
+  </div>
+ </div>
+ <div class="container" style="margin-top:30px;border-top:1px solid #ffffff20;padding-top:20px">
   <p style="font-size:.8rem">© <span id="year"></span> Isolo Printx. All rights reserved.</p>
  </div>
 </footer>
@@ -419,19 +384,19 @@ footer .logo{margin-bottom:15px}
 </div>
 
 <script>
-const $ = id => document.getElementById(id);
+const $=id=>document.getElementById(id);
 
-$("year").textContent = new Date().getFullYear();
+$("year").textContent=new Date().getFullYear();
 
 $("tapButton").addEventListener("click",()=>{
  const phone=$("demoPhone");
  phone.hidden=!phone.hidden;
  $("tapButton").textContent=phone.hidden
-   ?"✦ Simulate NFC Tap"
-   :"✦ Close Preview";
+  ?"✦ Simulate NFC Tap":"✦ Close Preview";
 });
 
-function buildQuote(){
+$("quoteForm").addEventListener("submit",event=>{
+ event.preventDefault();
  const fields={
   Name:$("clientName").value,
   Company:$("company").value,
@@ -441,53 +406,45 @@ function buildQuote(){
   Deadline:$("deadline").value,
   Details:$("details").value
  };
- return "Hello Isolo Printx, I would like a quotation.\n\n"+
+ const message="Hello Isolo Printx, I would like a quotation.\n\n"+
  Object.entries(fields)
   .filter(([key,value])=>value.trim())
   .map(([key,value])=>key+": "+value)
   .join("\n");
-}
-
-$("quoteForm").addEventListener("submit",event=>{
- event.preventDefault();
- const message=buildQuote();
- const whatsapp="https://wa.me/27734750510?text="+encodeURIComponent(message);
- const email="mailto:isoloprintx@gmail.com?subject="+
-  encodeURIComponent("New Project Enquiry")+
-  "&body="+encodeURIComponent(message);
-
- const choice=window.confirm(
-  "Your enquiry is ready.\n\n"+
-  "Press OK to continue on WhatsApp.\n"+
-  "Press Cancel to continue by email."
+ window.open(
+  "https://wa.me/27734750510?text="+encodeURIComponent(message),
+  "_blank",
+  "noopener"
  );
- window.location.href=choice?whatsapp:email;
 });
 
-const chatQuestions=[
- "Welcome to Iso Concierge! What would you like to create? NFC tags, AR experiences or corporate gifts?",
+const questions=[
+ "Welcome to Iso Concierge! What would you like to create: NFC tags, AR experiences or corporate gifts?",
  "How many items do you need, or what is the scope of your project?",
- "When would you ideally need the project completed?",
+ "When would you need the project completed?",
  "Do you have an estimated budget? You can say 'not sure'.",
  "What is your name and company or organisation?",
- "What is the best email address or contact number for your enquiry?"
+ "What is your email address or preferred contact number?"
 ];
-let chatStep=0;
-let chatAnswers=[];
 
-function addBubble(message,isUser=false){
+let step=0;
+let answers=[];
+
+function addBubble(message,user=false){
  const bubble=document.createElement("div");
- bubble.className="bubble"+(isUser?" user":"");
+ bubble.className="bubble"+(user?" user":"");
  bubble.textContent=message;
  $("chatMessages").appendChild(bubble);
  $("chatMessages").scrollTop=$("chatMessages").scrollHeight;
 }
 
 function startChat(){
+ step=0;
+ answers=[];
  $("chatMessages").innerHTML="";
- chatStep=0;
- chatAnswers=[];
- addBubble(chatQuestions[0]);
+ $("chatForm").style.display="flex";
+ $("chatInput").disabled=false;
+ addBubble(questions[0]);
 }
 
 function openChat(){
@@ -513,25 +470,24 @@ $("chatForm").addEventListener("submit",event=>{
  if(!answer)return;
 
  addBubble(answer,true);
- chatAnswers.push(answer);
+ answers.push(answer);
  $("chatInput").value="";
- chatStep++;
+ step++;
 
- if(chatStep<chatQuestions.length){
-  addBubble(chatQuestions[chatStep]);
+ if(step<questions.length){
+  addBubble(questions[step]);
  }else{
   const labels=[
    "Service","Quantity / Scope","Deadline",
    "Budget","Name / Company","Contact"
   ];
   const message="Hello Isolo Printx, I would like to discuss a project.\n\n"+
-   labels.map((label,i)=>label+": "+chatAnswers[i]).join("\n");
+   labels.map((label,i)=>label+": "+answers[i]).join("\n");
 
-  addBubble("Thank you! Your project enquiry is ready. Use the button below to send it to Isolo Printx.");
+  addBubble("Your project enquiry is ready. Send it to Isolo Printx using the button below.");
 
   const link=document.createElement("a");
-  link.className="btn purple";
-  link.style.margin="10px 0";
+  link.className="btn violet";
   link.textContent="Send Enquiry on WhatsApp";
   link.href="https://wa.me/27734750510?text="+encodeURIComponent(message);
   link.target="_blank";
@@ -540,36 +496,17 @@ $("chatForm").addEventListener("submit",event=>{
 
   const reset=document.createElement("button");
   reset.type="button";
-  reset.className="btn secondary";
-  reset.style.margin="10px 0 10px 8px";
+  reset.className="btn outline";
   reset.style.color="var(--navy)";
+  reset.style.margin="10px";
   reset.textContent="Start Again";
   reset.addEventListener("click",startChat);
   $("chatMessages").appendChild(reset);
 
-  $("chatInput").disabled=true;
   $("chatForm").style.display="none";
  }
 });
-
-const originalStart=startChat;
-startChat=function(){
- $("chatInput").disabled=false;
- $("chatForm").style.display="flex";
- originalStart();
-};
 </script>
 
 </body>
 </html>
-isoloprintx-experiences/
-│
-├── index.html
-│
-└── media/
-    ├── nfc-collection.png
-    ├── real-resin-tags.jpg
-    ├── nfc-phone-photo.jpg
-    ├── nfc-demo.mp4
-    ├── nfc-demo-short.mp4
-    └── making-resin.mp4
